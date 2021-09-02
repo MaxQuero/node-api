@@ -1,0 +1,21 @@
+{
+  "rootApi": "/api/v1",
+  "port": 8080,
+  "db" : {
+    "host": "localhost",
+    "database": "nodejs",
+    "user": "root",
+    "password": ""
+  },
+  "errors": {
+    "memberIdDoesNotExists": "Member id does not exists",
+    "wrongMaxValue": "Wrong max value",
+    "errorGettingUser": "Problem when getting user",
+    "errorUpdatingUser": "Problem when updating user",
+    "errorInsertingUser": "Problem when inserting user",
+    "errorDeletingUser": "Problem when deleting user",
+    "memberAlreadyExists": "Member already exists",
+    "noNameForMember": "No name for member"
+
+  }
+}

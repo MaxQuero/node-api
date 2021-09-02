@@ -1,0 +1,109 @@
+{
+  "info": {
+    "title": "API REST Documentation",
+    "version": "1.0.0",
+    "license": {
+      "name": "ISC"
+    },
+    "description": "API REST pour gérer des membres"
+  },
+  "basePath": "/api/v1",
+  "host": "localhost:8080",
+  "tags": [
+    {
+      "name": "members",
+      "description": "Méthodes permettant de gérer les membres"
+    }
+  ],
+  "paths": {
+    "/members/{id}": {
+      "get": {
+        "summary": "/members/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "put": {
+        "summary": "/members/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          },
+          {
+            "name": "name",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "delete": {
+        "summary": "/members/{id}",
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      }
+    },
+    "/members": {
+      "get": {
+        "summary": "/members",
+        "parameters": [
+          {
+            "name": "max",
+            "in": "query",
+            "required": false,
+            "schema": {
+              "type": "integer"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      },
+      "post": {
+        "summary": "/members",
+        "parameters": [
+          {
+            "name": "name",
+            "in": "body",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {},
+        "tags": ["members"]
+      }
+    }
+  },
+  "tags": ["members"],
+  "swagger": "2.0"
+}
